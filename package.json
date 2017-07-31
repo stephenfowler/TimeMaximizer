@@ -1,0 +1,20 @@
+{
+  "name": "timeMaximizer",
+  "version": "0.0.0",
+  "description": "Tool to pester a user with preloaded articles for review during down times (commute times, breaks, etc)",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run create -- --watch",
+    "create": "wt create index --bundle"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.16.2",
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "mongoose": "^4.9.7",
+    "twilio": "^3.6.1",
+    "webtask-tools": "^3.2.0"
+  }
+}
