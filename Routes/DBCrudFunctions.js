@@ -1,6 +1,6 @@
 import mongoose from 'mongoose'
 
-import mediaModel from './MediaSchema'
+import mediaModel from '../MediaSchema'
 
 export default (app) => {
 
