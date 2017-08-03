@@ -1,15 +1,6 @@
 import mongoose from 'mongoose'
 
 import mediaModel from '../MediaSchema'
-// exports.getMediaItem = function getMediaItem(req, res, next) {
-//     var number = req.params.number;
-//         req.mediaModel
-//             .find({'time': number})
-//             .sort({})
-//             .exec()
-//             .then(res.json.bind(res))
-//             .then(next);
-// };
 export default (app) => {
 
     app.get('/media', (req, res) => {

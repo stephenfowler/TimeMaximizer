@@ -29,6 +29,6 @@ app.get( '/sms/:number', (req, res) => {
                 }
             })
         }
-        )
+        ).then(res.send(200))
     })
 }
