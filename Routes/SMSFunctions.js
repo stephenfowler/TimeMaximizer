@@ -25,7 +25,7 @@ app.get( '/sms/:number', (req, res) => {
                 form: {
                     From: '12062080324',
                     To: '14063716193',
-                    Body: "You learning articles for your " + number + " minute time are " + arrayUrls
+                    Body: "Your learning articles for your " + number + " minute time are " + arrayUrls
                 }
             })
         }

@@ -11,12 +11,14 @@ It will right now send you all 15 minute articles at 2:43.
 You can also have it send you a list of artrilces of your length of choosing by manually hitting 
 <your-webtask>timeMaximizer/sms/<your-desired-time>.
 
-To setup this webtask you need the following secrets:
+To setup this webtask you need the following secrets: 
 MONGO_URL=mongodb://<mongo-DB-user>:<mongo-db-user-password></mongo-db-user-password>@ds129003.mlab.com:29003/<your-mongo-db>
 TWILIO_SID=<your-twilio-sid>
 TWILIO_AUTH_TOKEN=<your-twilio-auth-token> 
 PHONE_FROM=<your-twilio-sending-phone-number> 
 PHONE_TO=<your-phone-number>
+
+I recommend creating a "secrets file" and then using the web task cli tool like so: wt create index --secrets-file secrets.txt --bundle
 
 To load the Database you need a request similar to:
 POST /timeMaximizer/media HTTP/1.1
@@ -25,7 +27,7 @@ Content-Type: application/x-www-form-urlencoded
 Cache-Control: no-cache
 Postman-Token: 50141e8c-4cd9-73c3-5559-6d24b8099ab3
 
-url=Alphabet.com&time=15
+url=https://auth0.com/blog/auth0-webtasks-the-quickest-of-all-quick-starts/&time=15
 
 
 This is a work in progress and is a space for me to remedy my lack of experience in Node.js. 
@@ -36,6 +38,6 @@ My Todo list for this project are as follows:
 4. A way to tell it which articles you have read
 5. An integration with pocket or possible evernote so that when you save an article for later it will add it to the db
 6. A rough way to determine how long it will take to read an article
-7. Restructure the code or perhaps just switch over to my "Take 2" version located at https://github.com/stephenfowler/time-maximizer
+7. Add tests and restructure the code or perhaps just switch over to my "Take 2" version located at https://github.com/stephenfowler/time-maximizer
 
 If you have suggestions or a really cool idea please feel free to post on it in github. 
