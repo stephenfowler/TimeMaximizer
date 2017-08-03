@@ -20,7 +20,8 @@ PHONE_FROM=<your-twilio-sending-phone-number>
 PHONE_TO=<your-phone-number>
 ```
 
-I recommend creating a "secrets file" and then using the web task cli tool like so: `wt create index --secrets-file secrets.txt --bundle`
+I recommend creating a "secrets file" and then using the web task cli tool like so: 
+`wt create index --secrets-file secrets.txt --bundle`
 
 To load the Database you need a request similar to:
 ```
@@ -36,11 +37,11 @@ url=https://auth0.com/blog/auth0-webtasks-the-quickest-of-all-quick-starts/&time
 This is a work in progress and is a space for me to remedy my lack of experience in Node.js. 
 My Todo list for this project are as follows:
 1. Slack integration so it will send you articles based on your status.
-2. Better time scheduling
-3. A managment UI
-4. A way to tell it which articles you have read
-5. An integration with pocket or possible evernote so that when you save an article for later it will add it to the db
-6. A rough way to determine how long it will take to read an article
-7. Add tests and restructure the code or perhaps just switch over to my "Take 2" version located at https://github.com/stephenfowler/time-maximizer
+2. Better time scheduling.
+3. A managment UI for adding, removing and editing articles in the db.
+4. A way to tell it which articles you have read.
+5. An integration with pocket or possible evernote so that when you save an article for later it will add it to the db.
+6. A rough way to determine how long it will take to read an article.
+7. Add tests and restructure the code or perhaps just switch over to my "Take 2" version located at https://github.com/stephenfowler/time-maximizer.
 
 If you have suggestions or a really cool idea please feel free to post on it in github. 
